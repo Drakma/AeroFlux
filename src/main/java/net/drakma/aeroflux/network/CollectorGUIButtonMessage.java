@@ -1,4 +1,3 @@
-
 package net.drakma.aeroflux.network;
 
 import net.neoforged.neoforge.network.handling.IPayloadContext;
@@ -21,19 +20,13 @@ import net.drakma.aeroflux.AerofluxMod;
 
 @EventBusSubscriber
 public record CollectorGUIButtonMessage(int buttonID, int x, int y, int z) implements CustomPacketPayload {
-
-	public static final Type<CollectorGUIButtonMessage> TYPE = new Type<>(
-			Identifier.fromNamespaceAndPath(AerofluxMod.MODID, "collector_gui_buttons"));
-
-	public static final StreamCodec<RegistryFriendlyByteBuf, CollectorGUIButtonMessage> STREAM_CODEC = StreamCodec.of(
-			(RegistryFriendlyByteBuf buffer, CollectorGUIButtonMessage message) -> {
-				buffer.writeInt(message.buttonID);
-				buffer.writeInt(message.x);
-				buffer.writeInt(message.y);
-				buffer.writeInt(message.z);
-			},
-			(RegistryFriendlyByteBuf buffer) -> new CollectorGUIButtonMessage(buffer.readInt(), buffer.readInt(),
-					buffer.readInt(), buffer.readInt()));
+	public static final Type<CollectorGUIButtonMessage> TYPE = new Type<>(Identifier.fromNamespaceAndPath(AerofluxMod.MODID, "collector_gui_buttons"));
+	public static final StreamCodec<RegistryFriendlyByteBuf, CollectorGUIButtonMessage> STREAM_CODEC = StreamCodec.of((RegistryFriendlyByteBuf buffer, CollectorGUIButtonMessage message) -> {
+		buffer.writeInt(message.buttonID);
+		buffer.writeInt(message.x);
+		buffer.writeInt(message.y);
+		buffer.writeInt(message.z);
+	}, (RegistryFriendlyByteBuf buffer) -> new CollectorGUIButtonMessage(buffer.readInt(), buffer.readInt(), buffer.readInt(), buffer.readInt()));
 
 	@Override
 	public Type<CollectorGUIButtonMessage> type() {
@@ -42,21 +35,18 @@ public record CollectorGUIButtonMessage(int buttonID, int x, int y, int z) imple
 
 	public static void handleData(final CollectorGUIButtonMessage message, final IPayloadContext context) {
 		if (context.flow() == PacketFlow.SERVERBOUND) {
-			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z))
-					.exceptionally(e -> {
-						context.connection().disconnect(Component.literal(e.getMessage()));
-						return null;
-					});
+			context.enqueueWork(() -> handleButtonAction(context.player(), message.buttonID, message.x, message.y, message.z)).exceptionally(e -> {
+				context.connection().disconnect(Component.literal(e.getMessage()));
+				return null;
+			});
 		}
 	}
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-
 		// security measure to prevent arbitrary chunk generation
 		if (!world.getChunkSource().hasChunk(SectionPos.blockToSectionCoord(x), SectionPos.blockToSectionCoord(z)))
 			return;
-
 		if (buttonID == 0) {
 
 			SetOutputUpProcedure.execute(world, x, y, z);
@@ -145,8 +135,6 @@ public record CollectorGUIButtonMessage(int buttonID, int x, int y, int z) imple
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		AerofluxMod.addNetworkMessage(CollectorGUIButtonMessage.TYPE, CollectorGUIButtonMessage.STREAM_CODEC,
-				CollectorGUIButtonMessage::handleData);
+		AerofluxMod.addNetworkMessage(CollectorGUIButtonMessage.TYPE, CollectorGUIButtonMessage.STREAM_CODEC, CollectorGUIButtonMessage::handleData);
 	}
-
 }
