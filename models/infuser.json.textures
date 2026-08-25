@@ -1,0 +1,13 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "1": "minecraft:gray_concrete",
+        "2": "minecraft:oak_log",
+        "3": "minecraft:cobblestone",
+        "4": "minecraft:hopper_inside"
+      }
+    }
+  }
+}

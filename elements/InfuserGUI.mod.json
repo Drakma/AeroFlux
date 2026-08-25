@@ -1,0 +1,684 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_light.png",
+          "use1Xscale": false,
+          "displayCondition": "IsDarknessLight",
+          "x": 126,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_medium.png",
+          "use1Xscale": false,
+          "displayCondition": "IsDarknessMedium",
+          "x": 126,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_dark.png",
+          "use1Xscale": false,
+          "displayCondition": "IsDarknessDark",
+          "x": 126,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rotate",
+          "image": "rotate.png",
+          "hoveredImage": "",
+          "onClick": "RotateBlock",
+          "x": 113,
+          "y": 192,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_rotate_tooltip",
+          "text": {
+            "fixedValue": "",
+            "name": "RotateTooltip"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 113,
+          "y": 192,
+          "locked": true
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_mode",
+          "image": "mode.png",
+          "hoveredImage": "",
+          "onClick": "DarknessToggle",
+          "x": 113,
+          "y": 179,
+          "locked": true
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_switch_mode",
+          "text": {
+            "fixedValue": "Switch Mode"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 113,
+          "y": 179,
+          "locked": true
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_get_block_name",
+          "text": {
+            "fixedValue": "",
+            "name": "GetBlockName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 141,
+          "y": 45,
+          "locked": false
+        }
+      },
+      {
+        "type": "inputslot",
+        "data": {
+          "inputLimit": {
+            "value": ""
+          },
+          "disablePlacement": {
+            "fixedValue": false
+          },
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 187,
+          "y": 76,
+          "locked": true
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 1,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 241,
+          "y": 67,
+          "locked": true
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 2,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 67,
+          "locked": true
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 3,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 241,
+          "y": 85,
+          "locked": true
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 4,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 259,
+          "y": 85,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aeroflux_slot.png",
+          "use1Xscale": false,
+          "x": 188,
+          "y": 77,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aeroflux_slot.png",
+          "use1Xscale": false,
+          "x": 242,
+          "y": 68,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aeroflux_slot.png",
+          "use1Xscale": false,
+          "x": 242,
+          "y": 86,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aeroflux_slot.png",
+          "use1Xscale": false,
+          "x": 260,
+          "y": 68,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "aeroflux_slot.png",
+          "use1Xscale": false,
+          "x": 260,
+          "y": 86,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_empty.png",
+          "use1Xscale": false,
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_some.png",
+          "use1Xscale": false,
+          "displayCondition": "FilledSome",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_10.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled10",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_20.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled20",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_30.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled30",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_40.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled40",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_50.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled50",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_60.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled60",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_70.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled70",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_80.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled80",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_90.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled90",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_almost.png",
+          "use1Xscale": false,
+          "displayCondition": "FilledAlmost",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_full.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled100",
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_progress_overlay.png",
+          "use1Xscale": false,
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_get_fluid_level_only",
+          "text": {
+            "fixedValue": "",
+            "name": "GetFluidLevelOnly"
+          },
+          "width": 8,
+          "height": 54,
+          "x": 138,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_empty.png",
+          "use1Xscale": false,
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_some.png",
+          "use1Xscale": false,
+          "displayCondition": "ProgressSome",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_10.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress10",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_20.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress20",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_30.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress30",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_40.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress40",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_50.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress50",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_60.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress60",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_70.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress70",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_80.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress80",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_90.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress90",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_almost.png",
+          "use1Xscale": false,
+          "displayCondition": "ProgressAlmost",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "v_timer_100.png",
+          "use1Xscale": false,
+          "displayCondition": "Progress100",
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_get_progress",
+          "text": {
+            "fixedValue": "",
+            "name": "GetProgress"
+          },
+          "width": 8,
+          "height": 54,
+          "x": 148,
+          "y": 62,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_redstone_off",
+          "image": "tab_redstone_off.png",
+          "hoveredImage": "",
+          "onClick": "SettingsRedstoneToggle",
+          "displayCondition": "CapabilityRedstone",
+          "x": 111,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_redstone_on",
+          "image": "tab_redstone_on.png",
+          "hoveredImage": "",
+          "onClick": "SettingsRedstoneToggle",
+          "displayCondition": "SettingsRedstoneStatus",
+          "x": 111,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_redstone_settings",
+          "text": {
+            "fixedValue": "Redstone Settings"
+          },
+          "displayCondition": "CapabilityRedstone",
+          "width": 14,
+          "height": 14,
+          "x": 111,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "settings_medium.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSettingsMedium",
+          "x": 59,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "settings_light.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSettingsLight",
+          "x": 59,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "settings_dark.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSettingsDark",
+          "x": 59,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_fluid_off",
+          "image": "tab_fluid_off.png",
+          "hoveredImage": "",
+          "onClick": "SettingsFluidToggle",
+          "displayCondition": "CapabilityFluid",
+          "x": 111,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_item_off",
+          "image": "tab_item_off.png",
+          "hoveredImage": "",
+          "onClick": "SettingsItemToggle",
+          "displayCondition": "CapabilityItems",
+          "x": 111,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_energy_off",
+          "image": "tab_energy_off.png",
+          "hoveredImage": "",
+          "onClick": "SettingsEnergyToggle",
+          "displayCondition": "CapabilityEnergy",
+          "x": 111,
+          "y": 82,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

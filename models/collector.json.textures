@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "minecraft:cobblestone",
+        "1": "minecraft:oak_log",
+        "2": "minecraft:white_concrete",
+        "3": "minecraft:gray_concrete",
+        "4": "minecraft:light_gray_concrete"
+      }
+    }
+  }
+}

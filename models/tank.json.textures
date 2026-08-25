@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "3": "minecraft:acacia_planks",
+        "6": "minecraft:acacia_log_top",
+        "7": "minecraft:beehive_end"
+      }
+    }
+  }
+}

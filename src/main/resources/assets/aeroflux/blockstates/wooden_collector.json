@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "aeroflux:block/wooden_collector"
+    },
+    "facing=east": {
+      "model": "aeroflux:block/wooden_collector",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "aeroflux:block/wooden_collector",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "aeroflux:block/wooden_collector",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,1073 @@
+{
+  "_fv": 89,
+  "_type": "multipartblock",
+  "definition": {
+    "texture": "pipe_center",
+    "textureTop": "",
+    "textureLeft": "",
+    "textureFront": "",
+    "textureRight": "",
+    "textureBack": "",
+    "renderType": 2,
+    "customModelName": "pipe_center:default",
+    "rotationMode": 0,
+    "enablePitch": false,
+    "emissiveRendering": false,
+    "displayFluidOverlay": false,
+    "parts": [
+      {
+        "texture": "pipe_center",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_center",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 0,
+        "uvlock": true,
+        "stateMap": [],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 6.5,
+            "my": 6.5,
+            "mz": 6.5,
+            "Mx": 9.5,
+            "My": 9.5,
+            "Mz": 9.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_side",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 0,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:north",
+              "type": "string"
+            },
+            "value": "on"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 6.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_connector",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_connected",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 0,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:north",
+              "type": "string"
+            },
+            "value": "connected"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 7.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 7.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 9.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 9.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 10.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 6.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 7.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_side",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 90,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:east",
+              "type": "string"
+            },
+            "value": "on"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 6.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_connector",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_connected",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 90,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:east",
+              "type": "string"
+            },
+            "value": "connected"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": false,
+        "boundingBoxes": [
+          {
+            "mx": 0.0,
+            "my": 0.0,
+            "mz": 0.0,
+            "Mx": 16.0,
+            "My": 16.0,
+            "Mz": 16.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_side",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 180,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:south",
+              "type": "string"
+            },
+            "value": "on"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 6.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_connector",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_connected",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 180,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:south",
+              "type": "string"
+            },
+            "value": "connected"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 7.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 7.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 9.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 9.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 10.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 6.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 7.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_side",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 270,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:west",
+              "type": "string"
+            },
+            "value": "on"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 6.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_connector",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_connected",
+        "particleTexture": "",
+        "rotationX": 0,
+        "rotationY": 270,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:west",
+              "type": "string"
+            },
+            "value": "connected"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 7.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 7.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 9.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 9.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 10.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 6.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 7.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_side",
+        "particleTexture": "",
+        "rotationX": 270,
+        "rotationY": 0,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:up",
+              "type": "string"
+            },
+            "value": "on"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 6.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_connector",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_connected",
+        "particleTexture": "",
+        "rotationX": 270,
+        "rotationY": 0,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:up",
+              "type": "string"
+            },
+            "value": "connected"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 7.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 7.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 9.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 9.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 10.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 6.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 7.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_block",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_side",
+        "particleTexture": "",
+        "rotationX": 90,
+        "rotationY": 0,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:down",
+              "type": "string"
+            },
+            "value": "on"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 6.5,
+            "subtract": false
+          }
+        ]
+      },
+      {
+        "texture": "pipe_connector",
+        "textureTop": "",
+        "textureLeft": "",
+        "textureFront": "",
+        "textureRight": "",
+        "textureBack": "",
+        "renderType": 2,
+        "customModelName": "pipe_connected",
+        "particleTexture": "",
+        "rotationX": 90,
+        "rotationY": 0,
+        "uvlock": true,
+        "stateMap": [
+          {
+            "property": {
+              "arrayData": [
+                "off",
+                "on",
+                "connected"
+              ],
+              "name": "CUSTOM:down",
+              "type": "string"
+            },
+            "value": "connected"
+          }
+        ],
+        "condition": "",
+        "hasCustomBoundingBox": true,
+        "boundingBoxes": [
+          {
+            "mx": 7.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 9.0,
+            "My": 9.0,
+            "Mz": 7.0,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 5.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 7.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 9.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 11.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 5.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.0,
+            "Mx": 11.0,
+            "My": 9.0,
+            "Mz": 0.5,
+            "subtract": false
+          },
+          {
+            "mx": 9.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 7.0,
+            "mz": 0.5,
+            "Mx": 7.0,
+            "My": 9.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 9.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 10.0,
+            "Mz": 1.0,
+            "subtract": false
+          },
+          {
+            "mx": 6.0,
+            "my": 6.0,
+            "mz": 0.5,
+            "Mx": 10.0,
+            "My": 7.0,
+            "Mz": 1.0,
+            "subtract": false
+          }
+        ]
+      }
+    ],
+    "animations": [],
+    "itemTexture": "",
+    "particleTexture": "pipe_center",
+    "blockBase": "Normal",
+    "blockSetType": "OAK",
+    "leavesParticleChance": 0.0,
+    "tintType": "No tint",
+    "isItemTinted": false,
+    "hasTransparency": true,
+    "connectedSides": false,
+    "transparencyType": "CUTOUT_MIPPED",
+    "disableOffset": false,
+    "boundingBoxes": [],
+    "customProperties": [
+      {
+        "arrayData": [
+          "off",
+          "on",
+          "connected"
+        ],
+        "name": "CUSTOM:west",
+        "type": "string",
+        "value": "off"
+      },
+      {
+        "arrayData": [
+          "off",
+          "on",
+          "connected"
+        ],
+        "name": "CUSTOM:up",
+        "type": "string",
+        "value": "off"
+      },
+      {
+        "arrayData": [
+          "off",
+          "on",
+          "connected"
+        ],
+        "name": "CUSTOM:down",
+        "type": "string",
+        "value": "off"
+      },
+      {
+        "arrayData": [
+          "on",
+          "off",
+          "connected"
+        ],
+        "name": "CUSTOM:north",
+        "type": "string",
+        "value": "on"
+      },
+      {
+        "arrayData": [
+          "on",
+          "off",
+          "connected"
+        ],
+        "name": "CUSTOM:east",
+        "type": "string",
+        "value": "on"
+      },
+      {
+        "arrayData": [
+          "on",
+          "off",
+          "connected"
+        ],
+        "name": "CUSTOM:south",
+        "type": "string",
+        "value": "on"
+      }
+    ],
+    "name": "Pipe",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "hardness": 0.7,
+    "resistance": 10.0,
+    "hasGravity": false,
+    "isWaterloggable": false,
+    "hasBlockItem": true,
+    "maxStackSize": 64,
+    "rarity": "COMMON",
+    "immuneToFire": true,
+    "creativeTabs": [
+      "CUSTOM:AeroFlux"
+    ],
+    "destroyTool": "Not specified",
+    "customDrop": "",
+    "dropAmount": 1,
+    "xpAmountMin": 0,
+    "xpAmountMax": 0,
+    "useLootTableForDrops": false,
+    "requiresCorrectTool": false,
+    "enchantPowerBonus": 0.0,
+    "plantsGrowOn": false,
+    "canRedstoneConnect": false,
+    "hasCustomOpacity": false,
+    "lightOpacity": 15,
+    "tickRate": 1,
+    "tickRandomly": false,
+    "isReplaceable": false,
+    "canProvidePower": false,
+    "emittedRedstonePower": {
+      "fixedValue": 15.0
+    },
+    "colorOnMap": "DEFAULT",
+    "noteBlockInstrument": "harp",
+    "creativePickItem": "",
+    "offsetType": "NONE",
+    "aiPathNodeType": "DEFAULT",
+    "beaconColorModifier": {
+      "value": -1,
+      "falpha": 0.0
+    },
+    "strippingResult": "",
+    "ignitedByLava": false,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "isLadder": false,
+    "slipperiness": 0.6,
+    "speedFactor": 1.0,
+    "jumpFactor": 1.0,
+    "reactionToPushing": "NORMAL",
+    "isNotColidable": false,
+    "soundOnStep": "GLASS",
+    "isCustomSoundType": false,
+    "breakSound": "",
+    "fallSound": "",
+    "hitSound": "",
+    "placeSound": "",
+    "stepSound": "",
+    "luminance": {
+      "fixedValue": 0.0
+    },
+    "unbreakable": false,
+    "vanillaToolTier": "WOOD",
+    "isBonemealable": false,
+    "sensitiveToVibration": false,
+    "vibrationalEvents": [],
+    "vibrationSensitivityRadius": {
+      "fixedValue": 8.0
+    },
+    "hasInventory": true,
+    "openGUIOnRightClick": false,
+    "inventorySize": 0,
+    "inventoryStackSize": 64,
+    "inventoryDropWhenDestroyed": false,
+    "inventoryComparatorPower": false,
+    "inventoryOutSlotIDs": [],
+    "inventoryInSlotIDs": [],
+    "hasEnergyStorage": false,
+    "energyInitial": 0,
+    "energyCapacity": 400000,
+    "energyMaxReceive": 200,
+    "energyMaxExtract": 200,
+    "isFluidTank": true,
+    "fluidCapacity": 1000,
+    "fluidRestrictions": [
+      "CUSTOM:AeroFluxFluid"
+    ],
+    "onNeighbourBlockChanges": "PipeNeighbourBlockChanges",
+    "generateFeature": false,
+    "restrictionBiomes": [],
+    "blocksToReplace": [],
+    "generationShape": "UNIFORM",
+    "frequencyPerChunks": 10,
+    "frequencyOnChunk": 16,
+    "minGenerateHeight": 0,
+    "maxGenerateHeight": 64
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "aeroflux:blocks/stone_collector",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "aeroflux:stone_collector"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "_fv": 89,
+  "_type": "fluid",
+  "definition": {
+    "name": "Aero Flux Fluid",
+    "bucketName": "Aero Flux Fluid Bucket",
+    "textureStill": "aero_flux_fluid_still",
+    "textureFlowing": "aero_flux_fluid_flow",
+    "textureRenderOverlay": "",
+    "hasFog": true,
+    "fogColor": {
+      "value": -154,
+      "falpha": 0.0
+    },
+    "fogStartDistance": {
+      "fixedValue": 0.0
+    },
+    "fogEndDistance": {
+      "fixedValue": 48.0
+    },
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 7,
+    "levelDecrease": 1,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": "CUSTOM:FluxParticle",
+    "flowStrength": 0.1,
+    "luminosity": 0,
+    "density": 250,
+    "viscosity": 250,
+    "temperature": 750,
+    "type": "WATER",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTabs": [
+      "CUSTOM:AeroFlux"
+    ],
+    "emptySound": "",
+    "rarity": "COMMON",
+    "specialInformation": {
+      "fixedValue": []
+    },
+    "resistance": 100.0,
+    "luminance": 0,
+    "lightOpacity": 1,
+    "emissiveRendering": true,
+    "tickRate": 0,
+    "ignitedByLava": false,
+    "flammability": 0,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "SAND"
+  }
+}

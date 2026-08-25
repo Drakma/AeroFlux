@@ -1,0 +1,8 @@
+{
+  "parent": "aeroflux:custom/pipe_side",
+  "textures": {
+    "all": "aeroflux:block/pipe_block",
+    "particle": "aeroflux:block/pipe_block",
+    "0": "aeroflux:block/pipe_block"
+  }
+}

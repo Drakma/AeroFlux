@@ -1,0 +1,8 @@
+{
+  "parent": "aeroflux:custom/pipe_center",
+  "textures": {
+    "all": "aeroflux:block/pipe_center",
+    "particle": "aeroflux:block/pipe_center",
+    "0": "aeroflux:block/pipe_center"
+  }
+}

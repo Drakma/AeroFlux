@@ -1,0 +1,939 @@
+{
+  "_fv": 89,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_light.png",
+          "use1Xscale": false,
+          "displayCondition": "IsDarknessLight",
+          "x": 126,
+          "y": 37,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_dark.png",
+          "use1Xscale": false,
+          "displayCondition": "IsDarknessDark",
+          "x": 126,
+          "y": 37,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "gui_medium.png",
+          "use1Xscale": false,
+          "displayCondition": "IsDarknessMedium",
+          "x": 126,
+          "y": 37,
+          "locked": true
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "settings_light.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSettingsLight",
+          "x": 59,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "settings_dark.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSettingsDark",
+          "x": 59,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "settings_medium.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSettingsMedium",
+          "x": 59,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_wooden_collector",
+          "text": {
+            "fixedValue": "Wooden Collector",
+            "name": "GetBlockName"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "x": 138,
+          "y": 44,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_side_button_no",
+          "image": "off.png",
+          "hoveredImage": "",
+          "onClick": "SetOutputUp",
+          "displayCondition": "SettingsStatus",
+          "x": 78,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_side_button_no1",
+          "image": "off.png",
+          "hoveredImage": "",
+          "onClick": "SetOutputLeft",
+          "displayCondition": "SettingsStatus",
+          "x": 65,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_side_button_no2",
+          "image": "off.png",
+          "hoveredImage": "",
+          "onClick": "SetOutputFront",
+          "displayCondition": "SettingsStatus",
+          "x": 78,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_side_button_no3",
+          "image": "off.png",
+          "hoveredImage": "",
+          "onClick": "SetOutputRight",
+          "displayCondition": "SettingsStatus",
+          "x": 91,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_side_button_no4",
+          "image": "off.png",
+          "hoveredImage": "",
+          "onClick": "SetOutputDown",
+          "displayCondition": "SettingsStatus",
+          "x": 78,
+          "y": 99,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_side_button_no5",
+          "image": "off.png",
+          "hoveredImage": "",
+          "onClick": "SetOutputBack",
+          "displayCondition": "SettingsStatus",
+          "x": 91,
+          "y": 99,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sky_progression.png",
+          "use1Xscale": false,
+          "x": 139,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "weather_raining.png",
+          "use1Xscale": false,
+          "displayCondition": "IsRaining",
+          "x": 139,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "weather_storming.png",
+          "use1Xscale": false,
+          "displayCondition": "IsStorming",
+          "x": 139,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sky_time_outline.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSunrise",
+          "x": 137,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sky_time_outline.png",
+          "use1Xscale": false,
+          "displayCondition": "IsDaytime",
+          "x": 176,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sky_time_outline.png",
+          "use1Xscale": false,
+          "displayCondition": "IsSunset",
+          "x": 215,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sky_time_outline.png",
+          "use1Xscale": false,
+          "displayCondition": "IsNight",
+          "x": 250,
+          "y": 64,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "sky_cantbeseen.png",
+          "use1Xscale": false,
+          "displayCondition": "CantSeeSky",
+          "x": 139,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_generation_per_minute",
+          "text": {
+            "fixedValue": "",
+            "name": "GetTime"
+          },
+          "width": 150,
+          "height": 25,
+          "x": 139,
+          "y": 66,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_empty.png",
+          "use1Xscale": false,
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_some.png",
+          "use1Xscale": false,
+          "displayCondition": "FilledSome",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_10.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled10",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_20.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled20",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_30.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled30",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_40.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled40",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_50.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled50",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_60.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled60",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_70.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled70",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_80.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled80",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_90.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled90",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_full.png",
+          "use1Xscale": false,
+          "displayCondition": "Filled100",
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "h_progress_overlay.png",
+          "use1Xscale": false,
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_proc_get_fluid_level",
+          "text": {
+            "fixedValue": "",
+            "name": "GetFluidLevel"
+          },
+          "width": 161,
+          "height": 10,
+          "x": 134,
+          "y": 102,
+          "locked": false
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_sky_ubstructed",
+          "text": {
+            "fixedValue": "Sky Obstructed"
+          },
+          "color": {
+            "value": -3355444,
+            "falpha": 0.0
+          },
+          "hasShadow": false,
+          "displayCondition": "CantSeeSky",
+          "x": 181,
+          "y": 75,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_redstone_alwayson",
+          "image": "redstone_alwayson.png",
+          "hoveredImage": "",
+          "onClick": "AlwaysOnToggle",
+          "displayCondition": "AlwaysOn",
+          "x": 65,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_always_on",
+          "text": {
+            "fixedValue": "Always On"
+          },
+          "displayCondition": "AlwaysOn",
+          "width": 12,
+          "height": 12,
+          "x": 65,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_redstone_required",
+          "image": "redstone_required.png",
+          "hoveredImage": "",
+          "onClick": "AlwaysOnToggle",
+          "displayCondition": "RedstoneRequired",
+          "x": 65,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_redstone_required",
+          "text": {
+            "fixedValue": "Redstone Required"
+          },
+          "displayCondition": "RedstoneRequired",
+          "width": 12,
+          "height": 12,
+          "x": 65,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_redstone_signal_off",
+          "image": "redstone_signal_off.png",
+          "hoveredImage": "",
+          "onClick": "RedstoneSignalToggle",
+          "displayCondition": "RedstoneSignalOff",
+          "x": 78,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_redstone_signal_off",
+          "text": {
+            "fixedValue": "Redstone Signal Off"
+          },
+          "displayCondition": "RedstoneSignalOff",
+          "width": 25,
+          "height": 12,
+          "x": 78,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_redstone_signal_on",
+          "image": "redstone_signal_on.png",
+          "hoveredImage": "",
+          "onClick": "RedstoneSignalToggle",
+          "displayCondition": "RedstoneSignalOn",
+          "x": 78,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_redstone_signal_on",
+          "text": {
+            "fixedValue": "Redstone Signal On"
+          },
+          "displayCondition": "RedstoneSignalOn",
+          "width": 25,
+          "height": 12,
+          "x": 78,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_redstone_signal_level",
+          "image": "redstone_signal_level.png",
+          "hoveredImage": "",
+          "onClick": "RedstoneSignalToggle",
+          "displayCondition": "RedstoneSignalLevel",
+          "x": 78,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_redstone_signal_levels",
+          "text": {
+            "fixedValue": "Redstone Signal Levels"
+          },
+          "displayCondition": "RedstoneSignalLevel",
+          "width": 25,
+          "height": 12,
+          "x": 78,
+          "y": 50,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_auto_export",
+          "image": "auto_export.png",
+          "hoveredImage": "",
+          "onClick": "AutoExportToggle",
+          "displayCondition": "AutoExportOn",
+          "x": 29,
+          "y": 96,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_redstone",
+          "image": "tab_redstone_off.png",
+          "hoveredImage": "",
+          "onClick": "SettingsRedstoneToggle",
+          "displayCondition": "CapabilityRedstone",
+          "x": 111,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_redstone_selected",
+          "image": "tab_redstone_on.png",
+          "hoveredImage": "",
+          "onClick": "SettingsRedstoneToggle",
+          "displayCondition": "SettingsRedstoneStatus",
+          "x": 111,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_redstone_settings",
+          "text": {
+            "fixedValue": "Redstone Settings"
+          },
+          "displayCondition": "CapabilityRedstone",
+          "width": 14,
+          "height": 14,
+          "x": 111,
+          "y": 37,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_fluid",
+          "image": "tab_fluid_off.png",
+          "hoveredImage": "",
+          "onClick": "SettingsFluidToggle",
+          "displayCondition": "CapabilityFluid",
+          "x": 111,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_fluid_selected",
+          "image": "tab_fluid_on.png",
+          "hoveredImage": "",
+          "onClick": "SettingsFluidToggle",
+          "displayCondition": "SettingsFluidStatus",
+          "x": 111,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_fluid_settings",
+          "text": {
+            "fixedValue": "Fluid Settings"
+          },
+          "displayCondition": "CapabilityFluid",
+          "width": 14,
+          "height": 14,
+          "x": 111,
+          "y": 52,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_items",
+          "image": "tab_item_off.png",
+          "hoveredImage": "",
+          "displayCondition": "CapabilityItems",
+          "x": 111,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_items_selected",
+          "image": "tab_item_on.png",
+          "hoveredImage": "",
+          "displayCondition": "CapabilityItems",
+          "x": 111,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_item_settings",
+          "text": {
+            "fixedValue": "Item Settings"
+          },
+          "displayCondition": "CapabilityItems",
+          "width": 14,
+          "height": 14,
+          "x": 111,
+          "y": 67,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_energy",
+          "image": "tab_energy_off.png",
+          "hoveredImage": "",
+          "onClick": "SettingsEnergyToggle",
+          "displayCondition": "CapabilityEnergy",
+          "x": 111,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_tab_energy_selected",
+          "image": "tab_energy_on.png",
+          "hoveredImage": "",
+          "onClick": "SettingsEnergyToggle",
+          "displayCondition": "SettingsEnergyStatus",
+          "x": 111,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_energy_settings",
+          "text": {
+            "fixedValue": "Energy Settings"
+          },
+          "displayCondition": "CapabilityEnergy",
+          "width": 14,
+          "height": 14,
+          "x": 111,
+          "y": 83,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_mode",
+          "image": "mode.png",
+          "hoveredImage": "",
+          "onClick": "DarknessToggle",
+          "x": 112,
+          "y": 178,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_change_light_mode",
+          "text": {
+            "fixedValue": "Change Light Mode"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 112,
+          "y": 178,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_rotate",
+          "image": "rotate.png",
+          "hoveredImage": "",
+          "onClick": "RotateBlock",
+          "x": 112,
+          "y": 192,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_rotate",
+          "text": {
+            "fixedValue": "Rotate",
+            "name": "RotateTooltip"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 112,
+          "y": 192,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_close",
+          "text": {
+            "fixedValue": "Close"
+          },
+          "width": 9,
+          "height": 9,
+          "x": 60,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "imagebutton",
+        "data": {
+          "name": "imagebutton_settings_close",
+          "image": "settings_close.png",
+          "hoveredImage": "",
+          "onClick": "SettingsAllOff",
+          "displayCondition": "SettingsStatus",
+          "x": 60,
+          "y": 38,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_up",
+          "text": {
+            "fixedValue": "Up"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 78,
+          "y": 73,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_left",
+          "text": {
+            "fixedValue": "Left"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 65,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_front",
+          "text": {
+            "fixedValue": "Front"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 78,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_right",
+          "text": {
+            "fixedValue": "Right"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 91,
+          "y": 86,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_down",
+          "text": {
+            "fixedValue": "Down"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 78,
+          "y": 99,
+          "locked": false
+        }
+      },
+      {
+        "type": "tooltip",
+        "data": {
+          "name": "tooltip_back",
+          "text": {
+            "fixedValue": "Back"
+          },
+          "width": 12,
+          "height": 12,
+          "x": 91,
+          "y": 99,
+          "locked": false
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 12,
+      "sy": 12,
+      "ox": 12,
+      "oy": 12,
+      "snapOnGrid": false
+    }
+  }
+}

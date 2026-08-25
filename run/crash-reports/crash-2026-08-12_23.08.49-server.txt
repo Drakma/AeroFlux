@@ -1,0 +1,153 @@
+---- Minecraft Crash Report ----
+// Shall we play a game?
+
+Time: 2026-08-12 23:08:49
+Description: Exception ticking world
+
+java.lang.NullPointerException: Cannot invoke "net.neoforged.neoforge.transfer.resource.ResourceStack.amount()" because the return value of "net.neoforged.neoforge.transfer.ResourceHandlerUtil.extractFirst(net.neoforged.neoforge.transfer.ResourceHandler, java.util.function.Predicate, int, net.neoforged.neoforge.transfer.transaction.TransactionContext)" is null
+	at TRANSFORMER/aeroflux@1.0.0/net.drakma.aeroflux.procedures.WoodenCollectorOnTickUpdateProcedure.drainTankSimulate(WoodenCollectorOnTickUpdateProcedure.java:187) ~[main/:?] {}
+	at TRANSFORMER/aeroflux@1.0.0/net.drakma.aeroflux.procedures.WoodenCollectorOnTickUpdateProcedure.execute(WoodenCollectorOnTickUpdateProcedure.java:110) ~[main/:?] {}
+	at TRANSFORMER/aeroflux@1.0.0/net.drakma.aeroflux.block.WoodenCollectorBlock.tick(WoodenCollectorBlock.java:73) ~[main/:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.tick(BlockBehaviour.java:757) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.tickBlock(ServerLevel.java:834) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.ticks.LevelTicks.runCollectedTicks(LevelTicks.java:190) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.ticks.LevelTicks.tick(LevelTicks.java:87) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:392) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1150) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1003) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:146) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1035) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:119) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:776) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:300) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at java.base/java.lang.Thread.run(Thread.java:1474) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at TRANSFORMER/aeroflux@1.0.0/net.drakma.aeroflux.procedures.WoodenCollectorOnTickUpdateProcedure.drainTankSimulate(WoodenCollectorOnTickUpdateProcedure.java:187) ~[main/:?] {}
+	at TRANSFORMER/aeroflux@1.0.0/net.drakma.aeroflux.procedures.WoodenCollectorOnTickUpdateProcedure.execute(WoodenCollectorOnTickUpdateProcedure.java:110) ~[main/:?] {}
+	at TRANSFORMER/aeroflux@1.0.0/net.drakma.aeroflux.block.WoodenCollectorBlock.tick(WoodenCollectorBlock.java:73) ~[main/:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.level.block.state.BlockBehaviour$BlockStateBase.tick(BlockBehaviour.java:757) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.tickBlock(ServerLevel.java:834) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.ticks.LevelTicks.runCollectedTicks(LevelTicks.java:190) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.world.ticks.LevelTicks.tick(LevelTicks.java:87) ~[minecraft-patched-26.1.2.95.jar:?] {}
+-- Affected level --
+Details:
+	All players: 1 total; ServerPlayer{name=Dev, id=21, pos=(-56.35334287948567, 68.0, 17.51801947411222), mode=SURVIVAL, permission=owner}
+	Chunk stats: 1369
+	Level dimension: minecraft:overworld
+	Level time: 84223 game time, 12952 day time
+	Level spawn location: World: (-48,68,16), Section: (at 0,4,0 in -3,4,1; chunk contains blocks -48,-64,16 to -33,319,31), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Level name: New World
+	Level game mode: Game mode: survival (ID 0). Hardcore: false. Commands: true
+	Known server brands: neoforge
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 140
+	Server weather: Rain time: 1 (now: false), thunder time: 1 (now: false)
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1863) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1153) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1003) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:146) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1035) ~[minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:119) ~[minecraft-patched-26.1.2.95.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:776) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:300) [minecraft-patched-26.1.2.95.jar:?] {neoforge:access_transformer}
+	at java.base/java.lang.Thread.run(Thread.java:1474) [?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 26.1.2
+	Minecraft Version ID: 26.1.2
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 25.0.2, JetBrains s.r.o.
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), JetBrains s.r.o.
+	Memory: 333259168 bytes (317 MiB) / 792723456 bytes (756 MiB) up to 8304721920 bytes (7920 MiB)
+	Memory (heap): init: 496MiB, used: 436MiB, committed: 756MiB, max: 7920MiB
+	Memory (non-head): init: 007MiB, used: 215MiB, committed: 242MiB, max: 000MiB
+	CPUs: 12
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+	Identifier: Intel64 Family 6 Model 158 Stepping 10
+	Microarchitecture: Coffee Lake
+	Frequency (GHz): 3.70
+	Number of physical packages: 1
+	Number of physical CPUs: 6
+	Number of logical CPUs: 12
+	Graphics card #0 name: NVIDIA GeForce GTX 1080 Ti
+	Graphics card #0 vendor: NVIDIA
+	Graphics card #0 VRAM (MiB): 11264.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 32.0.15.8266
+	Graphics card #1 name: Intel(R) UHD Graphics 630
+	Graphics card #1 vendor: Intel Corporation
+	Graphics card #1 VRAM (MiB): 1024.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 31.0.101.2140
+	Graphics card #2 name: NVIDIA GeForce GTX 970
+	Graphics card #2 vendor: NVIDIA
+	Graphics card #2 VRAM (MiB): 4096.00
+	Graphics card #2 deviceId: VideoController3
+	Graphics card #2 versionInfo: 32.0.15.8266
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 2.93
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 2.93
+	Memory slot #1 type: DDR4
+	Memory slot #2 capacity (MiB): 8192.00
+	Memory slot #2 clockSpeed (GHz): 2.93
+	Memory slot #2 type: DDR4
+	Memory slot #3 capacity (MiB): 8192.00
+	Memory slot #3 clockSpeed (GHz): 2.93
+	Memory slot #3 type: DDR4
+	Virtual memory max (MiB): 64055.27
+	Virtual memory used (MiB): 30846.40
+	Swap memory total (MiB): 32384.00
+	Swap memory used (MiB): 3226.87
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 179316.73, total: 953185.56
+	Space in storage for workdir (MiB): available: 179316.73, total: 953185.56
+	JVM Flags: 0 total; 
+	Debug Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/21, l='ServerLevel[New World]', x=-56.35, y=68.00, z=17.52]]
+	Active Data Packs: vanilla, mod_data, mod/jade (incompatible), mod/neoforge, mod/aeroflux, mod/jei (incompatible)
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, mod/aeroflux, mod/jade (incompatible), mod/jei (incompatible), mod/neoforge, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -3027369661503106943
+	Suppressed Exceptions: ~~NONE~~
+	Type: Integrated Server
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 26.1.2.95
+	Class Processors: 
+		00.00%: neoforge:neoforge_dev_dist_cleaner
+		00.00%: neoforge:computing_frames (marker)
+		00.00%: neoforge:runtime_enum_extender
+		04.47%: neoforge:access_transformer
+		00.20%: neoforge:mixin
+		00.00%: neoforge:simple_processors_default (marker)
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00.24%: neoforge.coremods:method_redirector
+	Mod List: 
+		main                                              |Aero Flux                     |aeroflux                      |1.0.0               |Manifest: NOSIGNATURE
+		jade-324717-8326300.jar                           |Jade                          |jade                          |26.1.8+neoforge     |Manifest: 6e7faa597e90e65403fc8673fbc492668f5fd1caca2ede17d7c32a6cd614bea9
+		jei-26.1.2-neoforge-29.6.2.38.jar                 |Just Enough Items             |jei                           |29.6.2.38           |Manifest: b2a5ea8eea54430eacf8f43985e4c8b7107d2983069d87c1ad9c4707d19b5f01
+		minecraft-patched-26.1.2.95.jar                   |Minecraft                     |minecraft                     |26.1.2              |Manifest: NOSIGNATURE
+		neoforge-26.1.2.95-universal.jar                  |NeoForge                      |neoforge                      |26.1.2.95           |Manifest: NOSIGNATURE
+	Crash Report UUID: 9e86462b-173f-4904-88ad-d7d58b744e09
+	FML: 11.0.15
+	NeoForge: 26.1.2.95

@@ -1,0 +1,65 @@
+repositories {
+  maven {
+    url "https://cursemaven.com"
+  }
+}
+
+dependencies {
+  runtimeOnly "curse.maven:mouse-tweaks-60089:7840778"
+}
+
+
+repositories {
+  maven {
+    url "https://cursemaven.com"
+  }
+}
+
+dependencies {
+  runtimeOnly "curse.maven:inventory-sorter-240633:7940779"
+}
+
+
+repositories {
+  maven {
+    url "https://cursemaven.com"
+  }
+}
+
+dependencies {
+  implementation "curse.maven:pipez-443900:8351634"
+}
+
+
+repositories {
+    maven {
+        url = "https://cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+}
+dependencies {
+    // Jade 26.1 NeoForge build for NeoForge <= 26.1.2.71
+    implementation "curse.maven:jade-324717:8647353"
+}
+
+
+repositories {
+  maven {
+    name = "Jared's maven"
+    url = "https://maven.blamejared.com/"
+  }
+  maven {
+    name = "ModMaven"
+    url = "https://modmaven.dev"
+  }
+}
+
+dependencies {
+    compileOnly("mezz.jei:jei-26.1.2-common-api:29.29.0.77")
+    compileOnly("mezz.jei:jei-26.1.2-neoforge-api:29.29.0.77")
+    runtimeOnly("mezz.jei:jei-26.1.2-neoforge:29.29.0.77")
+}
+
+

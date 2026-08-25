@@ -1,0 +1,12 @@
+{
+  "parent": "aeroflux:custom/collector",
+  "textures": {
+    "all": "minecraft:block/oak_log",
+    "particle": "minecraft:block/oak_log",
+    "0": "minecraft:block/cobblestone",
+    "1": "minecraft:block/oak_log",
+    "2": "minecraft:block/white_concrete",
+    "3": "minecraft:block/gray_concrete",
+    "4": "minecraft:block/light_gray_concrete"
+  }
+}

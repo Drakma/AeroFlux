@@ -1,0 +1,25 @@
+{
+  "_fv": 89,
+  "_type": "particle",
+  "definition": {
+    "texture": "sun_flux_particle",
+    "animate": false,
+    "frameDuration": 1,
+    "width": 0.30000000000000004,
+    "height": 0.30000000000000004,
+    "scale": {
+      "fixedValue": 1.0
+    },
+    "fixedScale": false,
+    "speedFactor": 1.5,
+    "gravity": 0.0,
+    "maxAge": 30,
+    "maxAgeDiff": 5,
+    "angularVelocity": 0.15,
+    "angularAcceleration": 0.0,
+    "canCollide": false,
+    "alwaysShow": false,
+    "emissiveRendering": false,
+    "renderType": "TRANSLUCENT"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "name": "default",
+      "map": {
+        "0": "pipe_block",
+        "1": "pipe_connector"
+      }
+    }
+  }
+}

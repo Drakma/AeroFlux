@@ -1,0 +1,24 @@
+#Will particles be emitted
+emit_particles = true
+#Will rain halve the generation of Aero Flux?
+rain_halves_generation = true
+#mB/tick for pipe
+pipe_mb_tick = 125.0
+
+	[wooden.collector]
+		#mb of Fluid filled per generation
+		wooden_mb_filled = 20.0
+		#Ticks between Fluid Generation
+		wooden_max_tick = 40.0
+
+	[wooden.infuser]
+		#mb of Fluid used per generation
+		wooden_flux_per_tick = 2.0
+		#Ticks to infused a block
+		wooden_infusion_max_tick = 400.0
+
+[stone]
+	#mb of Fluid filled per generation
+	stone_mb_filled = 30.0
+	#Ticks between Fluid Generation
+	stone_max_tick = 40.0

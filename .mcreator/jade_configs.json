@@ -1,0 +1,54 @@
+[
+  {
+    "blockRegistryName": "wooden_collector",
+    "blockDisplayName": "Wooden Collector",
+    "enabled": true,
+    "syncNbtAutomatically": true,
+    "progressElements": [
+      {
+        "id": "progress_1787597092825",
+        "label": "Progress",
+        "showLabel": false,
+        "currentNbtTag": "Progress",
+        "maxNbtTag": "MaxProgress",
+        "defaultMax": 100.0,
+        "progressType": "JADE_BAR",
+        "percentagePosition": "IN_BAR",
+        "barHeight": 12,
+        "barColorHex": "#4CAF50",
+        "backgroundColorHex": "#2A2A2A",
+        "bgGradientColorHex": "",
+        "borderColorHex": "#FFFFFF",
+        "showPercentage": true,
+        "showValues": true
+      }
+    ],
+    "watchElements": []
+  },
+  {
+    "blockRegistryName": "stone_collector",
+    "blockDisplayName": "Stone Collector",
+    "enabled": true,
+    "syncNbtAutomatically": true,
+    "progressElements": [
+      {
+        "id": "progress_1787597110434",
+        "label": "Progress",
+        "showLabel": false,
+        "currentNbtTag": "Progress",
+        "maxNbtTag": "MaxProgress",
+        "defaultMax": 100.0,
+        "progressType": "JADE_BAR",
+        "percentagePosition": "IN_BAR",
+        "barHeight": 12,
+        "barColorHex": "#4CAF50",
+        "backgroundColorHex": "#2A2A2A",
+        "bgGradientColorHex": "",
+        "borderColorHex": "#FFFFFF",
+        "showPercentage": true,
+        "showValues": true
+      }
+    ],
+    "watchElements": []
+  }
+]

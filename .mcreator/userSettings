@@ -1,0 +1,28 @@
+{
+  "workspacePanelIconSize": "LIST",
+  "workspacePanelSortType": "CREATED",
+  "workspacePanelSortAscending": true,
+  "projectBrowserState": {
+    "expandedPaths": [
+      "[, Aero Flux]",
+      "[, Aero Flux, Models]"
+    ]
+  },
+  "leftDockState": {
+    "expandedDock": "project_browser",
+    "dockSizes": {
+      "project_browser": 199,
+      "local_history": 280
+    }
+  },
+  "rightDockState": {
+    "dockSizes": {}
+  },
+  "bottomDockState": {
+    "dockSizes": {
+      "console": 339,
+      "code_viewer": 300,
+      "debugger": 300
+    }
+  }
+}
