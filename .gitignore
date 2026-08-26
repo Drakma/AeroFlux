@@ -1,1 +1,4 @@
 .mcreator/workspaceBackups/
+.vscode/
+run/
+build/

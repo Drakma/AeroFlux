@@ -30,7 +30,7 @@ public class AeroFluxConfigurationConfiguration {
 		BUILDER.pop();
 		BUILDER.push("stone");
 		STONE_MB_FILLED = BUILDER.comment("mb of Fluid filled per generation").define("stone_mb_filled", (double) 5);
-		STONE_MAX_TICK = BUILDER.comment("Ticks between Fluid Generation").define("stone_max_tick", (double) 3);
+		STONE_MAX_TICK = BUILDER.comment("Ticks between Fluid Generation").define("stone_max_tick", (double) 400);
 		BUILDER.pop();
 
 		SPEC = BUILDER.build();

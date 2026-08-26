@@ -2,6 +2,660 @@
 
 All notable changes to the **Aero Flux** mod will be documented in this file.
 
+## [1.0.0] - 2026-08-25
+
+### Changed
+- Modified **Pipe (multipartblock)**
+- Modified **Pipe (multipartblock)**
+- Modified **Progress20 (element)**
+- Modified **RotateBlock (element)**
+- Modified **ImportSettingsOn (element)**
+- Modified **SettingsAllOff (element)**
+- Modified **SetOutputRight (element)**
+- Modified **ScrewdriverRightclicked (element)**
+- Modified **AutoExportToggle (element)**
+- Modified **SettingsStatusExport (element)**
+- Modified **SetInputBack (element)**
+- Modified **CantSeeSky (element)**
+- Modified **WoodenInfuser (element)**
+- Modified **SettingsAnyAll (element)**
+- Modified **ExportSettingsOn (element)**
+- Modified **RedstoneSignalOff (element)**
+- Modified **PipeNeighbourBlockChanges (element)**
+- Modified **WoodenTankItemOnTickUpdate (element)**
+- Modified **RedstoneSignalToggle (element)**
+- Modified **ProgressAlmost (element)**
+- Modified **MachineRedstoneOff (element)**
+- Modified **SettingsFluidToggle (element)**
+- Modified **CollectorOnClientTickUpdate (element)**
+- Modified **GetProgress (element)**
+- Modified **TankGUI (element)**
+- Modified **IsNight (element)**
+- Modified **Filled30 (element)**
+- Modified **MachineBlockAdded (element)**
+- Modified **SetOutputFront (element)**
+- Modified **ImportExportToggle (element)**
+- Modified **TankRedstoneOn (element)**
+- Modified **SettingsFluidStatus (element)**
+- Modified **GetEmittedRedstoneLevel (element)**
+- Modified **SettingsRedstoneToggle (element)**
+- Modified **Pipe (element)**
+- Modified **GetCelestialAngle (element)**
+- Modified **ScrewdriverRightclickedOnBlock (element)**
+- Modified **RedstoneRequired (element)**
+- Modified **TankNeighbourBlockChanges (element)**
+- Modified **SettingsItemToggle (element)**
+- Modified **RotateTooltip (element)**
+- Modified **CapabilityFluid (element)**
+- Modified **SetOutputBack (element)**
+- Modified **GetSmallest (element)**
+- Modified **Progress60 (element)**
+- Modified **GetBlockInDirection (element)**
+- Modified **CapabilityRedstone (element)**
+- Modified **RedstoneSignalLevel (element)**
+- Modified **WoodenTank (element)**
+- Modified **SettingsToggle (element)**
+- Modified **Progress50 (element)**
+- Modified **IsDarknessMedium (element)**
+- Modified **FilledSome (element)**
+- Modified **Progress40 (element)**
+- Modified **WoodenCollectorOnTickUpdate (element)**
+- Modified **Filled10 (element)**
+- Modified **SettingsStatusImport (element)**
+- Modified **IsSunrise (element)**
+- Modified **InputBack (element)**
+- Modified **WoodenTankItem (element)**
+- Modified **SettingsStatus (element)**
+- Modified **OutputBack (element)**
+- Modified **Screwdriver (element)**
+- Modified **TankRedstoneOff (element)**
+- Modified **SetOutputDown (element)**
+- Modified **SetMachineCapabilities (element)**
+- Modified **Progress10 (element)**
+- Modified **GetHardness (element)**
+- Modified **IsRaining (element)**
+- Modified **AutoExportOff (element)**
+- Modified **AeroFlux (element)**
+- Modified **OutputLeft (element)**
+- Modified **OutputRight (element)**
+- Modified **Progress30 (element)**
+- Modified **StoneCollectorOnTickUpdate (element)**
+- Modified **InfuserGUI (element)**
+- Modified **Filled20 (element)**
+- Modified **IsSettingsLight (element)**
+- Modified **StoneCollector (element)**
+- Modified **SettingsEnergyToggle (element)**
+- Modified **Progress100 (element)**
+- Modified **CapabilityEnergy (element)**
+- Modified **IsDaytime (element)**
+- Modified **IsSettingsDark (element)**
+- Modified **AlwaysOn (element)**
+- Modified **SetInputFront (element)**
+- Modified **Filled40 (element)**
+- Modified **OutputFront (element)**
+- Modified **AutoImportToggle (element)**
+- Modified **InputRight (element)**
+- Modified **RedstoneSignalOn (element)**
+- Modified **TankBlockNewAdded (element)**
+- Modified **AutoImportOff (element)**
+- Modified **Filled90 (element)**
+- Modified **ProgressSome (element)**
+- Modified **Progress70 (element)**
+- Modified **AutoExportOn (element)**
+- Modified **GenerationPerMinute (element)**
+- Modified **TankBlockAdded (element)**
+- Modified **SettingsEnergyStatus (element)**
+- Modified **WoodenCollector (element)**
+- Modified **IsDarknessLight (element)**
+- Modified **MachineRedstoneOn (element)**
+- Modified **IsBetween (element)**
+- Modified **FluxParticle (element)**
+- Modified **SetInputUp (element)**
+- Modified **SetInputRight (element)**
+- Modified **GetTime (element)**
+- Modified **Filled70 (element)**
+- Modified **TankOnBlockRightclicked (element)**
+- Modified **Progress90 (element)**
+- Modified **SettingsRedstoneStatus (element)**
+- Modified **TransferFluid (element)**
+- Modified **SetInputDown (element)**
+- Modified **Filled60 (element)**
+- Modified **ConvertSideToDirection (element)**
+- Modified **AeroFluxConfiguration (element)**
+- Modified **AlwaysOnToggle (element)**
+- Modified **CollectorGUI (element)**
+- Modified **OutputUp (element)**
+- Modified **Progress80 (element)**
+- Modified **Filled50 (element)**
+- Modified **GetFluidLevel (element)**
+- Modified **IsSunset (element)**
+- Modified **OutputDown (element)**
+- Modified **InputFront (element)**
+- Modified **FilledAlmost (element)**
+- Modified **FluxEnrichedCobblestone (element)**
+- Modified **SetOutputLeft (element)**
+- Modified **Filled80 (element)**
+- Modified **TankBlockInitSettings (element)**
+- Modified **DarknessToggle (element)**
+- Modified **SetOutputUp (element)**
+- Modified **WoodenInfuserOnTickUpdate (element)**
+- Modified **AeroFluxFluid (element)**
+- Modified **IsSettingsMedium (element)**
+- Modified **TankOnTickUpdate (element)**
+- Modified **GetFluidLevelOnly (element)**
+- Modified **IsDarknessDark (element)**
+- Modified **SetInputLeft (element)**
+- Modified **IsStorming (element)**
+- Modified **GetBlockName (element)**
+- Modified **InputDown (element)**
+- Modified **Filled100 (element)**
+- Modified **InputUp (element)**
+- Modified **InputLeft (element)**
+- Modified **CapabilityItems (element)**
+- Modified **SettingsItemStatus (element)**
+- Modified **AutoImportOn (element)**
+- Modified **Progress20 (element)**
+- Modified **RotateBlock (element)**
+- Modified **ImportSettingsOn (element)**
+- Modified **SettingsAllOff (element)**
+- Modified **SetOutputRight (element)**
+- Modified **ScrewdriverRightclicked (element)**
+- Modified **AutoExportToggle (element)**
+- Modified **SettingsStatusExport (element)**
+- Modified **SetInputBack (element)**
+- Modified **CantSeeSky (element)**
+- Modified **WoodenInfuser (element)**
+- Modified **SettingsAnyAll (element)**
+- Modified **ExportSettingsOn (element)**
+- Modified **RedstoneSignalOff (element)**
+- Modified **PipeNeighbourBlockChanges (element)**
+- Modified **WoodenTankItemOnTickUpdate (element)**
+- Modified **RedstoneSignalToggle (element)**
+- Modified **ProgressAlmost (element)**
+- Modified **MachineRedstoneOff (element)**
+- Modified **SettingsFluidToggle (element)**
+- Modified **CollectorOnClientTickUpdate (element)**
+- Modified **GetProgress (element)**
+- Modified **TankGUI (element)**
+- Modified **IsNight (element)**
+- Modified **Filled30 (element)**
+- Modified **MachineBlockAdded (element)**
+- Modified **SetOutputFront (element)**
+- Modified **ImportExportToggle (element)**
+- Modified **TankRedstoneOn (element)**
+- Modified **SettingsFluidStatus (element)**
+- Modified **GetEmittedRedstoneLevel (element)**
+- Modified **SettingsRedstoneToggle (element)**
+- Modified **Pipe (element)**
+- Modified **GetCelestialAngle (element)**
+- Modified **ScrewdriverRightclickedOnBlock (element)**
+- Modified **RedstoneRequired (element)**
+- Modified **TankNeighbourBlockChanges (element)**
+- Modified **SettingsItemToggle (element)**
+- Modified **RotateTooltip (element)**
+- Modified **CapabilityFluid (element)**
+- Modified **SetOutputBack (element)**
+- Modified **GetSmallest (element)**
+- Modified **Progress60 (element)**
+- Modified **GetBlockInDirection (element)**
+- Modified **CapabilityRedstone (element)**
+- Modified **RedstoneSignalLevel (element)**
+- Modified **WoodenTank (element)**
+- Modified **SettingsToggle (element)**
+- Modified **Progress50 (element)**
+- Modified **IsDarknessMedium (element)**
+- Modified **FilledSome (element)**
+- Modified **Progress40 (element)**
+- Modified **WoodenCollectorOnTickUpdate (element)**
+- Modified **Filled10 (element)**
+- Modified **SettingsStatusImport (element)**
+- Modified **IsSunrise (element)**
+- Modified **InputBack (element)**
+- Modified **WoodenTankItem (element)**
+- Modified **SettingsStatus (element)**
+- Modified **OutputBack (element)**
+- Modified **Screwdriver (element)**
+- Modified **TankRedstoneOff (element)**
+- Modified **SetOutputDown (element)**
+- Modified **SetMachineCapabilities (element)**
+- Modified **Progress10 (element)**
+- Modified **GetHardness (element)**
+- Modified **IsRaining (element)**
+- Modified **AutoExportOff (element)**
+- Modified **AeroFlux (element)**
+- Modified **OutputLeft (element)**
+- Modified **OutputRight (element)**
+- Modified **Progress30 (element)**
+- Modified **StoneCollectorOnTickUpdate (element)**
+- Modified **InfuserGUI (element)**
+- Modified **Filled20 (element)**
+- Modified **IsSettingsLight (element)**
+- Modified **StoneCollector (element)**
+- Modified **SettingsEnergyToggle (element)**
+- Modified **Progress100 (element)**
+- Modified **CapabilityEnergy (element)**
+- Modified **IsDaytime (element)**
+- Modified **IsSettingsDark (element)**
+- Modified **AlwaysOn (element)**
+- Modified **SetInputFront (element)**
+- Modified **Filled40 (element)**
+- Modified **OutputFront (element)**
+- Modified **AutoImportToggle (element)**
+- Modified **InputRight (element)**
+- Modified **RedstoneSignalOn (element)**
+- Modified **TankBlockNewAdded (element)**
+- Modified **AutoImportOff (element)**
+- Modified **Filled90 (element)**
+- Modified **ProgressSome (element)**
+- Modified **Progress70 (element)**
+- Modified **AutoExportOn (element)**
+- Modified **GenerationPerMinute (element)**
+- Modified **TankBlockAdded (element)**
+- Modified **SettingsEnergyStatus (element)**
+- Modified **WoodenCollector (element)**
+- Modified **IsDarknessLight (element)**
+- Modified **MachineRedstoneOn (element)**
+- Modified **IsBetween (element)**
+- Modified **FluxParticle (element)**
+- Modified **SetInputUp (element)**
+- Modified **SetInputRight (element)**
+- Modified **GetTime (element)**
+- Modified **Filled70 (element)**
+- Modified **TankOnBlockRightclicked (element)**
+- Modified **Progress90 (element)**
+- Modified **SettingsRedstoneStatus (element)**
+- Modified **TransferFluid (element)**
+- Modified **SetInputDown (element)**
+- Modified **Filled60 (element)**
+- Modified **ConvertSideToDirection (element)**
+- Modified **AeroFluxConfiguration (element)**
+- Modified **AlwaysOnToggle (element)**
+- Modified **CollectorGUI (element)**
+- Modified **OutputUp (element)**
+- Modified **Progress80 (element)**
+- Modified **Filled50 (element)**
+- Modified **GetFluidLevel (element)**
+- Modified **IsSunset (element)**
+- Modified **OutputDown (element)**
+- Modified **InputFront (element)**
+- Modified **FilledAlmost (element)**
+- Modified **FluxEnrichedCobblestone (element)**
+- Modified **SetOutputLeft (element)**
+- Modified **Filled80 (element)**
+- Modified **TankBlockInitSettings (element)**
+- Modified **DarknessToggle (element)**
+- Modified **SetOutputUp (element)**
+- Modified **WoodenInfuserOnTickUpdate (element)**
+- Modified **AeroFluxFluid (element)**
+- Modified **IsSettingsMedium (element)**
+- Modified **TankOnTickUpdate (element)**
+- Modified **GetFluidLevelOnly (element)**
+- Modified **IsDarknessDark (element)**
+- Modified **SetInputLeft (element)**
+- Modified **IsStorming (element)**
+- Modified **GetBlockName (element)**
+- Modified **InputDown (element)**
+- Modified **Filled100 (element)**
+- Modified **InputUp (element)**
+- Modified **InputLeft (element)**
+- Modified **CapabilityItems (element)**
+- Modified **SettingsItemStatus (element)**
+- Modified **AutoImportOn (element)**
+- Modified **Progress20 (element)**
+- Modified **RotateBlock (element)**
+- Modified **ImportSettingsOn (element)**
+- Modified **SettingsAllOff (element)**
+- Modified **SetOutputRight (element)**
+- Modified **ScrewdriverRightclicked (element)**
+- Modified **AutoExportToggle (element)**
+- Modified **SettingsStatusExport (element)**
+- Modified **SetInputBack (element)**
+- Modified **CantSeeSky (element)**
+- Modified **WoodenInfuser (element)**
+- Modified **SettingsAnyAll (element)**
+- Modified **ExportSettingsOn (element)**
+- Modified **RedstoneSignalOff (element)**
+- Modified **PipeNeighbourBlockChanges (element)**
+- Modified **WoodenTankItemOnTickUpdate (element)**
+- Modified **RedstoneSignalToggle (element)**
+- Modified **ProgressAlmost (element)**
+- Modified **MachineRedstoneOff (element)**
+- Modified **SettingsFluidToggle (element)**
+- Modified **CollectorOnClientTickUpdate (element)**
+- Modified **GetProgress (element)**
+- Modified **TankGUI (element)**
+- Modified **IsNight (element)**
+- Modified **Filled30 (element)**
+- Modified **MachineBlockAdded (element)**
+- Modified **SetOutputFront (element)**
+- Modified **ImportExportToggle (element)**
+- Modified **TankRedstoneOn (element)**
+- Modified **SettingsFluidStatus (element)**
+- Modified **GetEmittedRedstoneLevel (element)**
+- Modified **SettingsRedstoneToggle (element)**
+- Modified **Pipe (element)**
+- Modified **GetCelestialAngle (element)**
+- Modified **ScrewdriverRightclickedOnBlock (element)**
+- Modified **RedstoneRequired (element)**
+- Modified **TankNeighbourBlockChanges (element)**
+- Modified **SettingsItemToggle (element)**
+- Modified **RotateTooltip (element)**
+- Modified **CapabilityFluid (element)**
+- Modified **SetOutputBack (element)**
+- Modified **GetSmallest (element)**
+- Modified **Progress60 (element)**
+- Modified **GetBlockInDirection (element)**
+- Modified **CapabilityRedstone (element)**
+- Modified **RedstoneSignalLevel (element)**
+- Modified **WoodenTank (element)**
+- Modified **SettingsToggle (element)**
+- Modified **Progress50 (element)**
+- Modified **IsDarknessMedium (element)**
+- Modified **FilledSome (element)**
+- Modified **Progress40 (element)**
+- Modified **WoodenCollectorOnTickUpdate (element)**
+- Modified **Filled10 (element)**
+- Modified **SettingsStatusImport (element)**
+- Modified **IsSunrise (element)**
+- Modified **InputBack (element)**
+- Modified **WoodenTankItem (element)**
+- Modified **SettingsStatus (element)**
+- Modified **OutputBack (element)**
+- Modified **Screwdriver (element)**
+- Modified **TankRedstoneOff (element)**
+- Modified **SetOutputDown (element)**
+- Modified **SetMachineCapabilities (element)**
+- Modified **Progress10 (element)**
+- Modified **GetHardness (element)**
+- Modified **IsRaining (element)**
+- Modified **AutoExportOff (element)**
+- Modified **AeroFlux (element)**
+- Modified **OutputLeft (element)**
+- Modified **OutputRight (element)**
+- Modified **Progress30 (element)**
+- Modified **StoneCollectorOnTickUpdate (element)**
+- Modified **InfuserGUI (element)**
+- Modified **Filled20 (element)**
+- Modified **IsSettingsLight (element)**
+- Modified **StoneCollector (element)**
+- Modified **SettingsEnergyToggle (element)**
+- Modified **Progress100 (element)**
+- Modified **CapabilityEnergy (element)**
+- Modified **IsDaytime (element)**
+- Modified **IsSettingsDark (element)**
+- Modified **AlwaysOn (element)**
+- Modified **SetInputFront (element)**
+- Modified **Filled40 (element)**
+- Modified **OutputFront (element)**
+- Modified **AutoImportToggle (element)**
+- Modified **InputRight (element)**
+- Modified **RedstoneSignalOn (element)**
+- Modified **TankBlockNewAdded (element)**
+- Modified **AutoImportOff (element)**
+- Modified **Filled90 (element)**
+- Modified **ProgressSome (element)**
+- Modified **Progress70 (element)**
+- Modified **AutoExportOn (element)**
+- Modified **GenerationPerMinute (element)**
+- Modified **TankBlockAdded (element)**
+- Modified **SettingsEnergyStatus (element)**
+- Modified **WoodenCollector (element)**
+- Modified **IsDarknessLight (element)**
+- Modified **MachineRedstoneOn (element)**
+- Modified **IsBetween (element)**
+- Modified **FluxParticle (element)**
+- Modified **SetInputUp (element)**
+- Modified **SetInputRight (element)**
+- Modified **GetTime (element)**
+- Modified **Filled70 (element)**
+- Modified **TankOnBlockRightclicked (element)**
+- Modified **Progress90 (element)**
+- Modified **SettingsRedstoneStatus (element)**
+- Modified **TransferFluid (element)**
+- Modified **SetInputDown (element)**
+- Modified **Filled60 (element)**
+- Modified **ConvertSideToDirection (element)**
+- Modified **AeroFluxConfiguration (element)**
+- Modified **AlwaysOnToggle (element)**
+- Modified **CollectorGUI (element)**
+- Modified **OutputUp (element)**
+- Modified **Progress80 (element)**
+- Modified **Filled50 (element)**
+- Modified **GetFluidLevel (element)**
+- Modified **IsSunset (element)**
+- Modified **OutputDown (element)**
+- Modified **InputFront (element)**
+- Modified **FilledAlmost (element)**
+- Modified **FluxEnrichedCobblestone (element)**
+- Modified **SetOutputLeft (element)**
+- Modified **Filled80 (element)**
+- Modified **TankBlockInitSettings (element)**
+- Modified **DarknessToggle (element)**
+- Modified **SetOutputUp (element)**
+- Modified **WoodenInfuserOnTickUpdate (element)**
+- Modified **AeroFluxFluid (element)**
+- Modified **IsSettingsMedium (element)**
+- Modified **TankOnTickUpdate (element)**
+- Modified **GetFluidLevelOnly (element)**
+- Modified **IsDarknessDark (element)**
+- Modified **SetInputLeft (element)**
+- Modified **IsStorming (element)**
+- Modified **GetBlockName (element)**
+- Modified **InputDown (element)**
+- Modified **Filled100 (element)**
+- Modified **InputUp (element)**
+- Modified **InputLeft (element)**
+- Modified **CapabilityItems (element)**
+- Modified **SettingsItemStatus (element)**
+- Modified **AutoImportOn (element)**
+- Modified **AeroFluxConfiguration (config)**
+
+### Resources & Assets
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_13.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_13.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/pipe.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/particles/flux_particle.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_9.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_2.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_4.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/aero_flux_fluid_bucket.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/item/stone_collector.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/blockstates/aero_flux_fluid.json
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/mineable/axe.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/wooden_tank_item.json
+- Deleted resource asset: src/main/resources/META-INF/neoforge.mods.toml
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/screwdriver.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/blockstates/wooden_infuser.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/flux_enriched_cobblestone.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_0.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_3.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_10.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_6.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_11.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_7.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_8.json
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/replaceable.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_12.json
+- Deleted resource asset: src/main/resources/pack.mcmeta
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_1.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_5.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_fluid_selected.png
+- Added resource asset: src/main/resources/assets/aeroflux/items/wooden_infuser.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_items.png
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/flux_enriched_cobblestone.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_items_selected.png
+- Added resource asset: src/main/resources/assets/aeroflux/particles/flux_particle.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_button_no6.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_export3.png
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/aero_flux_fluid.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_export2.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_auto_import_off.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_import.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_button_no7.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_arrow_right.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_auto_import.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_export1.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_export.png
+- Added resource asset: src/main/resources/assets/aeroflux/items/wooden_tank_item.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_settings_closed.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_auto_export_off.png
+- Added resource asset: src/main/resources/assets/aeroflux/items/aero_flux_fluid_bucket.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/item/stone_collector.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_redstone.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_settings_import.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_fluid.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_import4.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_energy.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_redstone_selected.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_export6.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_settings_open.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_settings_close.png
+- Added resource asset: src/main/resources/assets/aeroflux/items/screwdriver.json
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_import2.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_tab_energy_selected.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_export5.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_settings_export.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_button_no8.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_button_no10.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_import1.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_import3.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_button_no11.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_auto_export.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_button_no9.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_bucket.png
+- Added gui texture: src/main/resources/assets/aeroflux/textures/screens/atlas/imagebutton_side_export4.png
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_10.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/pipe.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_6.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_11.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_7.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_9.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_2.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_4.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_8.json
+- Added tag definition: src/main/resources/data/minecraft/tags/block/replaceable.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_12.json
+- Added resource asset: src/main/resources/pack.mcmeta
+- Added tag definition: src/main/resources/data/minecraft/tags/block/mineable/axe.json
+- Added resource asset: src/main/resources/META-INF/neoforge.mods.toml
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_1.json
+- Added tag definition: src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_0.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_5.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_3.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/pipe.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/particles/flux_particle.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_9.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_2.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_4.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/aero_flux_fluid_bucket.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/item/stone_collector.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/blockstates/aero_flux_fluid.json
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/mineable/axe.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/wooden_tank_item.json
+- Deleted resource asset: src/main/resources/META-INF/neoforge.mods.toml
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/screwdriver.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/blockstates/wooden_infuser.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/flux_enriched_cobblestone.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_0.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_3.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_10.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_6.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_11.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_7.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_8.json
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/replaceable.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_12.json
+- Deleted resource asset: src/main/resources/pack.mcmeta
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_1.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_5.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/flux_enriched_cobblestone.json
+- Added resource asset: src/main/resources/assets/aeroflux/particles/flux_particle.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/aero_flux_fluid.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/aero_flux_fluid_bucket.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/screwdriver.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/wooden_infuser.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_10.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/pipe.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_6.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_11.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_7.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_9.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_2.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_4.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/wooden_tank_item.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/item/stone_collector.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_8.json
+- Added tag definition: src/main/resources/data/minecraft/tags/block/replaceable.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_12.json
+- Added resource asset: src/main/resources/pack.mcmeta
+- Added tag definition: src/main/resources/data/minecraft/tags/block/mineable/axe.json
+- Added resource asset: src/main/resources/META-INF/neoforge.mods.toml
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_1.json
+- Added tag definition: src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_0.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_5.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_3.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/pipe.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/particles/flux_particle.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_9.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_2.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_4.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/aero_flux_fluid_bucket.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/item/stone_collector.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/blockstates/aero_flux_fluid.json
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/mineable/axe.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/wooden_tank_item.json
+- Deleted resource asset: src/main/resources/META-INF/neoforge.mods.toml
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/screwdriver.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/blockstates/wooden_infuser.json
+- Deleted resource asset: src/main/resources/assets/aeroflux/items/flux_enriched_cobblestone.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_0.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_3.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_10.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_6.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_11.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_7.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_8.json
+- Deleted tag definition: src/main/resources/data/minecraft/tags/block/replaceable.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_12.json
+- Deleted resource asset: src/main/resources/pack.mcmeta
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_1.json
+- Deleted json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_5.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/wooden_infuser.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/flux_enriched_cobblestone.json
+- Added resource asset: src/main/resources/assets/aeroflux/particles/flux_particle.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/aero_flux_fluid.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/wooden_tank_item.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/aero_flux_fluid_bucket.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/item/stone_collector.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/screwdriver.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_10.json
+- Added resource asset: src/main/resources/assets/aeroflux/items/pipe.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_6.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_11.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_7.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_9.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_2.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_4.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_8.json
+- Added tag definition: src/main/resources/data/minecraft/tags/block/replaceable.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_12.json
+- Added resource asset: src/main/resources/pack.mcmeta
+- Added tag definition: src/main/resources/data/minecraft/tags/block/mineable/axe.json
+- Added resource asset: src/main/resources/META-INF/neoforge.mods.toml
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_1.json
+- Added tag definition: src/main/resources/data/minecraft/tags/block/mineable/pickaxe.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_0.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_5.json
+- Added json 3d model: src/main/resources/assets/aeroflux/models/block/pipe_part_3.json
+
+### Notes
+- CLEAR
+
 ## [1.0.0] - 2026-08-24
 
 ### Added
