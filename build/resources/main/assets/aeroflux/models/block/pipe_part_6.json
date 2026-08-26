@@ -1,9 +1,0 @@
-{
-  "parent": "aeroflux:custom/pipe_connected",
-  "textures": {
-    "all": "aeroflux:block/pipe_connector",
-    "particle": "aeroflux:block/pipe_center",
-    "0": "aeroflux:block/pipe_block",
-    "1": "aeroflux:block/pipe_connector"
-  }
-}

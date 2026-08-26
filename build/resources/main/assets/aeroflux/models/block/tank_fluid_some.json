@@ -1,8 +1,0 @@
-{
-	"parent": "aeroflux:custom/tank_fluid_some",
-	"textures": {
-		"all": "minecraft:block/oak_log",
-		"particle": "minecraft:block/oak_log",
-		"1": "aeroflux:block/aero_flux_fluid_still"
-	}
-}
