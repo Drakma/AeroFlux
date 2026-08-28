@@ -2,3 +2,7 @@
 .vscode/
 run/
 build/
+run
+build
+.mcreator
+.vscode
