@@ -15,15 +15,29 @@
         "progressType": "JADE_BAR",
         "percentagePosition": "IN_BAR",
         "barHeight": 12,
-        "barColorHex": "#4CAF50",
-        "backgroundColorHex": "#2A2A2A",
-        "bgGradientColorHex": "",
-        "borderColorHex": "#FFFFFF",
+        "barColorHex": "#FFFF99",
+        "backgroundColorHex": "#00000000",
+        "bgGradientColorHex": "#00000000",
+        "borderColorHex": "#999999",
         "showPercentage": true,
-        "showValues": true
+        "showValues": false,
+        "visibility": "ALWAYS",
+        "textColorHex": "#33FFFF",
+        "textShadow": true
       }
     ],
-    "watchElements": []
+    "watchElements": [
+      {
+        "id": "watch_1787870031113",
+        "label": "Can See Sky",
+        "tagName": "CanSeeSky",
+        "type": "BOOLEAN",
+        "formatString": "{label}: {value}",
+        "visibility": "ALWAYS",
+        "textColorHex": "#FFFFFF",
+        "textShadow": true
+      }
+    ]
   },
   {
     "blockRegistryName": "stone_collector",
@@ -41,12 +55,44 @@
         "progressType": "JADE_BAR",
         "percentagePosition": "IN_BAR",
         "barHeight": 12,
-        "barColorHex": "#4CAF50",
-        "backgroundColorHex": "#2A2A2A",
-        "bgGradientColorHex": "",
-        "borderColorHex": "#FFFFFF",
+        "barColorHex": "#FFFF99",
+        "backgroundColorHex": "#000000",
+        "bgGradientColorHex": "#333333",
+        "borderColorHex": "#666666",
         "showPercentage": true,
-        "showValues": true
+        "showValues": true,
+        "visibility": "ALWAYS",
+        "textColorHex": "#FFFFFF",
+        "textShadow": true
+      }
+    ],
+    "watchElements": []
+  },
+  {
+    "blockRegistryName": "wooden_infuser",
+    "blockDisplayName": "Wooden Infuser",
+    "enabled": true,
+    "syncNbtAutomatically": true,
+    "progressElements": [
+      {
+        "id": "progress_1787869845861",
+        "label": "Progress",
+        "showLabel": false,
+        "currentNbtTag": "Progress",
+        "maxNbtTag": "MaxProgress",
+        "defaultMax": 100.0,
+        "progressType": "JADE_BAR",
+        "percentagePosition": "IN_BAR",
+        "barHeight": 12,
+        "barColorHex": "#0099CC",
+        "backgroundColorHex": "#000000",
+        "bgGradientColorHex": "#333333",
+        "borderColorHex": "#666666",
+        "showPercentage": true,
+        "showValues": true,
+        "visibility": "ALWAYS",
+        "textColorHex": "#FFFFFF",
+        "textShadow": true
       }
     ],
     "watchElements": []

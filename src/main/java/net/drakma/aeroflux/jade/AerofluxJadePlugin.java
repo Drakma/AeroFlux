@@ -103,14 +103,23 @@ public class AerofluxJadePlugin implements IWailaPlugin {
                     blockMatched = true;
                     double cur_Progress = findNumber(data, "Progress", "progress", "PROGRESS");
                     double max_Progress = findNumber(data, "MaxProgress", "maxprogress", "MAXPROGRESS");
-                    if (cur_Progress >= 0) {
+                    if (cur_Progress >= 0 && true) {
                         if (max_Progress <= 0) max_Progress = 100.0;
                         float ratio = (float) Math.min(Math.max(cur_Progress / max_Progress, 0.0), 1.0);
                         int percent = (int) (ratio * 100);
-                        renderJadeBar(tooltip, "aeroflux:wooden_collector_Progress", "", ratio, percent, "IN_BAR", 12, 0xff4caf50, 0xff2a2a2a, 0xff121212, 0xffffffff);
-                        if (extended) {
-                            tooltip.add(Component.literal("§7Details: §f" + (int) cur_Progress + " / " + (int) max_Progress));
-                        }
+                        renderJadeBar(tooltip, "aeroflux:wooden_collector_Progress", "", ratio, percent, "IN_BAR", 12, 0xffffff99, 0x0, 0x0, 0xff999999, 0xff33ffff, true);
+                    }
+                    if (data.contains("CanSeeSky") && true) {
+                        try {
+                            Tag t = data.get("CanSeeSky");
+                            if (t != null) {
+                                String boolText = t.toString();
+                                boolean boolValue = "1b".equalsIgnoreCase(boolText) || "1".equals(boolText) || "true".equalsIgnoreCase(boolText);
+                                MutableComponent status = Component.literal(boolValue ? "\u2713" : "\u2717");
+                                status.withStyle(style -> style.withColor(boolValue ? 0xFF55FF55 : 0xFFFF5555));
+                                tooltip.add(Component.literal("§7Can See Sky: §f").append(status).withStyle(style -> style.withColor(0xffffffff)));
+                            }
+                        } catch (Throwable ignored) {}
                     }
                 }
 
@@ -119,13 +128,29 @@ public class AerofluxJadePlugin implements IWailaPlugin {
                     blockMatched = true;
                     double cur_Progress = findNumber(data, "Progress", "progress", "PROGRESS");
                     double max_Progress = findNumber(data, "MaxProgress", "maxprogress", "MAXPROGRESS");
-                    if (cur_Progress >= 0) {
+                    if (cur_Progress >= 0 && true) {
                         if (max_Progress <= 0) max_Progress = 100.0;
                         float ratio = (float) Math.min(Math.max(cur_Progress / max_Progress, 0.0), 1.0);
                         int percent = (int) (ratio * 100);
-                        renderJadeBar(tooltip, "aeroflux:stone_collector_Progress", "", ratio, percent, "IN_BAR", 12, 0xff4caf50, 0xff2a2a2a, 0xff121212, 0xffffffff);
+                        renderJadeBar(tooltip, "aeroflux:stone_collector_Progress", "", ratio, percent, "IN_BAR", 12, 0xffffff99, 0xff000000, 0xff333333, 0xff666666, 0xffffffff, true);
                         if (extended) {
-                            tooltip.add(Component.literal("§7Details: §f" + (int) cur_Progress + " / " + (int) max_Progress));
+                            tooltip.add(Component.literal("§7Details: §f" + (int) cur_Progress + " / " + (int) max_Progress).withStyle(style -> style.withColor(0xffffffff)));
+                        }
+                    }
+                }
+
+                // Block Config: Wooden Infuser [aeroflux:wooden_infuser]
+                if (blockId.equalsIgnoreCase("aeroflux:wooden_infuser") || blockPath.equalsIgnoreCase("wooden_infuser")) {
+                    blockMatched = true;
+                    double cur_Progress = findNumber(data, "Progress", "progress", "PROGRESS");
+                    double max_Progress = findNumber(data, "MaxProgress", "maxprogress", "MAXPROGRESS");
+                    if (cur_Progress >= 0 && true) {
+                        if (max_Progress <= 0) max_Progress = 100.0;
+                        float ratio = (float) Math.min(Math.max(cur_Progress / max_Progress, 0.0), 1.0);
+                        int percent = (int) (ratio * 100);
+                        renderJadeBar(tooltip, "aeroflux:wooden_infuser_Progress", "", ratio, percent, "IN_BAR", 12, 0xff0099cc, 0xff000000, 0xff333333, 0xff666666, 0xffffffff, true);
+                        if (extended) {
+                            tooltip.add(Component.literal("§7Details: §f" + (int) cur_Progress + " / " + (int) max_Progress).withStyle(style -> style.withColor(0xffffffff)));
                         }
                     }
                 }
@@ -139,7 +164,7 @@ public class AerofluxJadePlugin implements IWailaPlugin {
         }, Block.class);
     }
 
-    private static void renderArrow(ITooltip tooltip, String label, float ratio, int percent, String pctPos, int barColor, int bgColor, int borderColor) {
+    private static void renderArrow(ITooltip tooltip, String label, float ratio, int percent, String pctPos, int barColor, int bgColor, int borderColor, int textColor, boolean textShadow) {
         try {
             if ("ABOVE".equals(pctPos)) {
                 tooltip.add(Component.literal((label.isEmpty() ? "" : (label + ": ")) + "§e" + percent + "%"));
@@ -156,11 +181,11 @@ public class AerofluxJadePlugin implements IWailaPlugin {
                 }
             }
         } catch (Throwable fallback) {
-            renderBlockUnicodeBar(tooltip, label, ratio, percent, pctPos, barColor, bgColor, borderColor);
+            renderBlockUnicodeBar(tooltip, label, ratio, percent, pctPos, barColor, bgColor, borderColor, textColor, textShadow);
         }
     }
 
-    private static void renderJadeBar(ITooltip tooltip, String animKey, String label, float ratio, int percent, String pctPos, int barHeight, int barColor, int bgStartColor, int bgEndColor, int borderColor) {
+    private static void renderJadeBar(ITooltip tooltip, String animKey, String label, float ratio, int percent, String pctPos, int barHeight, int barColor, int bgStartColor, int bgEndColor, int borderColor, int textColor, boolean textShadow) {
         try {
             if (!label.isEmpty()) {
                 if ("ABOVE".equals(pctPos)) {
@@ -177,7 +202,7 @@ public class AerofluxJadePlugin implements IWailaPlugin {
                     tooltip.setLineMargin(-1, snownee.jade.api.ui.ScreenDirection.DOWN, 2);
                 } catch (Throwable ignored) {}
             }
-            snownee.jade.api.ui.Element barElem = new CustomProgressBarElement(animKey, 120, barHeight, ratio, percent, pctPos, barColor, bgStartColor, bgEndColor, borderColor);
+            snownee.jade.api.ui.ResizeableElement barElem = new CustomProgressBarElement(animKey, 120, barHeight, ratio, percent, pctPos, barColor, bgStartColor, bgEndColor, borderColor).flexGrow(1);
             if ("TRAILING".equals(pctPos)) {
                 tooltip.add(barElem.alignSelfCenter());
                 tooltip.append(snownee.jade.api.ui.JadeUI.text(Component.literal(" §e" + percent + "%")).alignSelfCenter());
@@ -185,11 +210,11 @@ public class AerofluxJadePlugin implements IWailaPlugin {
                 tooltip.add(barElem);
             }
         } catch (Throwable fallback) {
-            renderBlockUnicodeBar(tooltip, label, ratio, percent, pctPos, barColor, bgStartColor, borderColor);
+            renderBlockUnicodeBar(tooltip, label, ratio, percent, pctPos, barColor, bgStartColor, borderColor, textColor, textShadow);
         }
     }
 
-    public static class CustomProgressBarElement extends snownee.jade.api.ui.Element {
+    public static class CustomProgressBarElement extends snownee.jade.api.ui.ResizeableElement {
         private static final java.util.Map<String, Float> ANIMATED_RATIOS = new java.util.concurrent.ConcurrentHashMap<>();
         private static final java.util.Map<String, Long> LAST_RENDER_TIMES = new java.util.concurrent.ConcurrentHashMap<>();
 
@@ -209,10 +234,16 @@ public class AerofluxJadePlugin implements IWailaPlugin {
             this.ratio = Math.min(Math.max(ratio, 0.0f), 1.0f);
             this.percent = percent;
             this.pctPos = pctPos != null ? pctPos : "NONE";
-            this.barColor = (barColor & 0xFF000000) == 0 ? (0xFF000000 | barColor) : barColor;
-            this.bgStartColor = (bgStartColor & 0xFF000000) == 0 ? (0xFF000000 | bgStartColor) : bgStartColor;
-            this.bgEndColor = (bgEndColor & 0xFF000000) == 0 ? (0xFF000000 | bgEndColor) : bgEndColor;
-            this.borderColor = (borderColor & 0xFF000000) == 0 ? (0xFF000000 | borderColor) : borderColor;
+            this.barColor = barColor;
+            this.bgStartColor = bgStartColor;
+            this.bgEndColor = bgEndColor;
+            this.borderColor = borderColor;
+        }
+
+        @Override
+        public void setFreeSpace(int width, int height) {
+            this.width = Math.max(1, width);
+            this.height = Math.max(4, height);
         }
 
         private float getSmoothedRatio() {
@@ -319,7 +350,7 @@ public class AerofluxJadePlugin implements IWailaPlugin {
         }
     }
 
-    private static void renderBlockUnicodeBar(ITooltip tooltip, String label, float ratio, int percent, String pctPos, int barColor, int bgColor, int borderColor) {
+    private static void renderBlockUnicodeBar(ITooltip tooltip, String label, float ratio, int percent, String pctPos, int barColor, int bgColor, int borderColor, int textColor, boolean textShadow) {
         int totalBars = 12;
         int filled = (int) Math.round(ratio * totalBars);
         MutableComponent barComp = Component.literal("");
@@ -341,6 +372,98 @@ public class AerofluxJadePlugin implements IWailaPlugin {
             line.append(Component.literal(" §e" + percent + "%"));
         }
         tooltip.add(line);
+    }
+
+    private static void renderTimer(ITooltip tooltip, String label, String timerKey, long durationSeconds, String pctPos, int barColor, int bgStartColor, int bgEndColor, int borderColor, int textColor, boolean textShadow) {
+        long start = TIMER_START_TIMES.computeIfAbsent(timerKey, key -> System.currentTimeMillis());
+        int percent = (int) Math.min(100L, Math.max(0L, (System.currentTimeMillis() - start) * 100L / (Math.max(1L, durationSeconds) * 1000L)));
+        if ("ABOVE".equals(pctPos)) {
+            tooltip.add(Component.literal((label == null || label.isEmpty() ? "" : label + ": " ) + percent + "%"));
+        } else if (label != null && !label.isEmpty()) {
+            tooltip.add(Component.literal("§f" + label + "\n"));
+        }
+        TimerElement timer = new TimerElement(timerKey, durationSeconds, 24, pctPos, barColor, bgStartColor, bgEndColor, borderColor, textColor);
+        tooltip.add(timer.alignSelfCenter());
+        if ("TRAILING".equals(pctPos)) {
+            tooltip.append(snownee.jade.api.ui.JadeUI.text(Component.literal(" " + percent + "%")).alignSelfCenter());
+        }
+    }
+
+    private static final java.util.Map<String, Long> TIMER_START_TIMES = new java.util.concurrent.ConcurrentHashMap<>();
+
+    private static class TimerElement extends snownee.jade.api.ui.ResizeableElement {
+        private static final java.util.Map<String, Long> START_TIMES = new java.util.concurrent.ConcurrentHashMap<>();
+        private final String timerKey;
+        private final long durationMillis;
+        private final String pctPos;
+        private final int barColor;
+        private final int bgStartColor;
+        private final int bgEndColor;
+        private final int borderColor;
+
+        private final int textColor;
+
+        private TimerElement(String timerKey, long durationSeconds, int size, String pctPos, int barColor, int bgStartColor, int bgEndColor, int borderColor, int textColor) {
+            this.timerKey = timerKey;
+            this.durationMillis = Math.max(1L, durationSeconds) * 1000L;
+            this.pctPos = pctPos != null ? pctPos : "NONE";
+            this.width = size;
+            this.height = size;
+            this.barColor = barColor;
+            this.bgStartColor = bgStartColor;
+            this.bgEndColor = bgEndColor;
+            this.borderColor = borderColor;
+            this.textColor = textColor;
+        }
+
+        @Override
+        public void setFreeSpace(int width, int height) {
+            int size = Math.max(1, Math.min(width, height));
+            this.width = size;
+            this.height = size;
+        }
+
+        @Override
+        public Component getNarration() {
+            return Component.literal("Timer");
+        }
+
+        @Override
+        public void extractRenderState(net.minecraft.client.gui.GuiGraphicsExtractor graphics, int mouseX, int mouseY, float partialTick) {
+            long start = TIMER_START_TIMES.computeIfAbsent(timerKey, key -> System.currentTimeMillis());
+            float progress = Math.min(1.0f, Math.max(0.0f, (System.currentTimeMillis() - start) / (float) durationMillis));
+            int percent = (int) (progress * 100.0f);
+            int centerX = getX() + getWidth() / 2;
+            int centerY = getY() + getHeight() / 2;
+            int radius = Math.max(3, Math.min(getWidth(), getHeight()) / 2 - 3);
+            int segments = 72;
+            for (int i = 0; i < segments; i++) {
+                double angle = -Math.PI / 2.0 + (Math.PI * 2.0 * i / segments);
+                int px = centerX + (int) Math.round(Math.cos(angle) * radius);
+                int py = centerY + (int) Math.round(Math.sin(angle) * radius);
+                graphics.fill(px - 1, py - 1, px + 2, py + 2, borderColor);
+                int backgroundColor = blendTimerColor(bgStartColor, bgEndColor, i / (float) (segments - 1));
+                graphics.fill(px, py, px + 1, py + 1, i < progress * segments ? barColor : backgroundColor);
+            }
+            if ("IN_BAR".equals(pctPos)) {
+                String text = percent + "%";
+                net.minecraft.client.Minecraft mc = net.minecraft.client.Minecraft.getInstance();
+                if (mc.font != null) {
+                    graphics.pose().pushMatrix();
+                    graphics.pose().translate(centerX - mc.font.width(text) / 2.0f, centerY - 4.0f);
+                    snownee.jade.api.ui.IDisplayHelper.get().drawText(graphics, text, 0.0f, 0.0f, textColor);
+                    graphics.pose().popMatrix();
+                }
+            }
+        }
+
+        private static int blendTimerColor(int first, int second, float amount) {
+            int a = (int) (((first >>> 24) & 255) + (((second >>> 24) & 255) - ((first >>> 24) & 255)) * amount);
+            int r = (int) (((first >>> 16) & 255) + (((second >>> 16) & 255) - ((first >>> 16) & 255)) * amount);
+            int g = (int) (((first >>> 8) & 255) + (((second >>> 8) & 255) - ((first >>> 8) & 255)) * amount);
+            int b = (int) ((first & 255) + ((second & 255) - (first & 255)) * amount);
+            return (a << 24) | (r << 16) | (g << 8) | b;
+        }
     }
 
     private static void disableJadeTranslationCheck() {

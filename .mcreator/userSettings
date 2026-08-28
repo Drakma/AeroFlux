@@ -3,12 +3,14 @@
   "workspacePanelSortType": "CREATED",
   "workspacePanelSortAscending": true,
   "projectBrowserState": {
-    "expandedPaths": []
+    "expandedPaths": [
+      "[, Aero Flux]"
+    ]
   },
   "leftDockState": {
     "expandedDock": "project_browser",
     "dockSizes": {
-      "project_browser": 191,
+      "project_browser": 172,
       "local_history": 280
     }
   },

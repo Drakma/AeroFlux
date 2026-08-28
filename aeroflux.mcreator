@@ -4214,14 +4214,14 @@
   ],
   "sound_elements": [],
   "tag_elements": {
-    "BLOCKS:minecraft:mineable/axe": [
-      "~WoodenCollector@CUSTOM:WoodenCollector"
-    ],
     "BLOCKS:minecraft:replaceable": [
       "~AeroFluxFluid@CUSTOM:AeroFluxFluid"
     ],
     "BLOCKS:minecraft:mineable/pickaxe": [
       "~StoneCollector@CUSTOM:StoneCollector"
+    ],
+    "BLOCKS:minecraft:mineable/axe": [
+      "~WoodenCollector@CUSTOM:WoodenCollector"
     ]
   },
   "tab_element_order": {},
