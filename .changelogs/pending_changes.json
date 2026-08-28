@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "id": "61d3ed14-6636-4bc1-8865-4136092ee539",
+    "epochMillis": 1787893189824,
+    "timestamp": "2026-08-27 23:59:49",
+    "changeType": "MODIFIED",
+    "target": "WoodenCollector (block)",
+    "details": "Saved modified mod element"
+  },
+  {
+    "id": "6e9f3157-4b2c-43fe-bbd7-1f1065ba6237",
+    "epochMillis": 1787893192715,
+    "timestamp": "2026-08-27 23:59:52",
+    "changeType": "RESOURCE",
+    "target": "axe.json (Tag Definition)",
+    "details": "Deleted tag definition: src/main/resources/data/minecraft/tags/block/mineable/axe.json"
+  }
+]

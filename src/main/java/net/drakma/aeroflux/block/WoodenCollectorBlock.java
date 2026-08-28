@@ -1,5 +1,7 @@
 package net.drakma.aeroflux.block;
 
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -26,14 +28,17 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+import net.minecraft.client.color.block.BlockTintSources;
 
 import net.drakma.aeroflux.world.inventory.CollectorGUIMenu;
 import net.drakma.aeroflux.procedures.*;
+import net.drakma.aeroflux.init.AerofluxModBlocks;
 import net.drakma.aeroflux.block.entity.WoodenCollectorBlockEntity;
 
 import javax.annotation.Nullable;
 
 import java.util.function.Function;
+import java.util.List;
 
 import io.netty.buffer.Unpooled;
 
@@ -191,5 +196,9 @@ public class WoodenCollectorBlock extends Block implements EntityBlock {
 			return AbstractContainerMenu.getRedstoneSignalFromContainer(be);
 		else
 			return 0;
+	}
+
+	public static void blockColorLoad(RegisterColorHandlersEvent.BlockTintSources event) {
+		event.getBlockColors().register(List.of(BlockTintSources.grass()), AerofluxModBlocks.WOODEN_COLLECTOR.get());
 	}
 }

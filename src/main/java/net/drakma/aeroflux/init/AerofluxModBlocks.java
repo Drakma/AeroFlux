@@ -5,6 +5,10 @@ package net.drakma.aeroflux.init;
 
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.neoforged.neoforge.registries.DeferredBlock;
+import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.fml.common.EventBusSubscriber;
+import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.api.distmarker.Dist;
 
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
@@ -39,5 +43,13 @@ public class AerofluxModBlocks {
 	// End of user code block custom blocks
 	private static <B extends Block> DeferredBlock<B> register(String name, Function<BlockBehaviour.Properties, ? extends B> supplier) {
 		return REGISTRY.registerBlock(name, supplier);
+	}
+
+	@EventBusSubscriber(Dist.CLIENT)
+	public static class BlocksClientSideHandler {
+		@SubscribeEvent
+		public static void blockColorLoad(RegisterColorHandlersEvent.BlockTintSources event) {
+			WoodenCollectorBlock.blockColorLoad(event);
+		}
 	}
 }
